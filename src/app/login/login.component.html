@@ -1,14 +1,83 @@
+<form  (ngSubmit)="login()">
 <div class="page-header">
-    <div class="header-item">ARSS Grocery Store</div>
+    <div class="header-item">ARSS Grocery Store
+    </div>
 </div>
 <div>&nbsp;</div>
 <div class="page-body">
-    First Test sinu tttttttttttttttttttttt
+    WELCOME TO GROCERYSTORE
+    <br><br><br>
+<div class="page-body1">
+   <div class="body-item"> <marquee scrollamount="5"><b>  Hey,good to see you again!</b></marquee>
+       LOGIN HERES   
+      
+       <div class="login">
+       
+        <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+      
+          <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+            <input class="user-name" type="email" placeholder="Email" formControlName="email">
+          </p>
+      
+          <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+            <div *ngIf="formControls.email.errors.required">Email is required</div>
+          </div>
+      
+          <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+            <input class="password" type="password" placeholder="Password" formControlName="password">
+          </p>
+      
+          <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+            <div *ngIf="formControls.password.errors.required">Password is required</div>
+          </div>
+          <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+            <div *ngIf="formControls.password.errors.minlength">minimum 8 character is required</div>
+          </div>  
+          <div class="rem">
+            <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>         
+        </div>
+          <p>         
+            <input type="submit" value="Log in">
+          </p>
+        </form>      
+            </div> 
+          
+          <div class="forget-password">
+          <a href="#">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;  
+    <a href="#">Created account</a>
+    </div>
+    <br>
+    <div class="facebook-style">
+      
+   <a href="#" ><img src="assets/image/f.jpg"/>facebook </a>
+    </div>
+    <div class="google-style">
+      <a href=""><img src="assets/image/google.jpg"/>Google</a>
+</div>
+<div class="instrgram-style">
+   <a href="#"> <img src="assets/image/i.jpg"/>Instrgram</a>
+</div>
+   </div>
+</div>
+<div class="page-body2">
+    <div class="body-item"> REGISTRATION PAGE
+        <br><br><br><br><br><br><br>
+        <a class="submit" align="left">Registration</a>
+        
+    </div>
+</div>
 </div>
 <div>&nbsp;</div>
 <div class="page-footer">
     <div class="footer-tech-stack"><b>Tech Stack :</b> Java,Angular,Spring,Rest <br>
         Developed for Learning and Exploring New Technology
     </div>
-    <div class="footer-dev">Developed By Ajit,Rama,Sunil and Sinu</div>
+    <div class="footer-tech-stack"><b>Tech Stack: </b> this project provide gooods for end user</div>
+    <div class="footer-tech-stack"><b>About:-</b>The project report the provision store-Grocery shop<br>
+        The retail industry shows customer postive demand specially for food related products.<br>
+    The business of grocery store in the ability to provide their withwell pro </div>
+    <div class="footer-dev">Developed By Ajit,Akash,Rama,Sunil and Sinu</div>
 </div>
+</form>

@@ -3,23 +3,241 @@
     height:60px;
     background-color: rgb(9, 16, 109);
     border-color: chartreuse;
-    border-width: 1px;
+    border-width: 3px;
     border-style: solid;
 }
+
+ 
+
 .page-body{
     width: 100%;
+    text-align: center;
     height:450px;
-    background-color: darkgray;
     border-color: chartreuse;
-    border-width: 1px;
+    border-width: 3px;
     border-style: solid;
+
 }
+.page-body1{
+    height: 370px;
+    width: 38%;
+    float: left;
+    text-align:center;
+    background-color:rgb(21, 160, 56);
+    border-color:chartreuse;
+    border-style: solid;
+    border-color:chartreuse;
+    
+}
+.page-body2{
+    height: 350px;
+    width: 38%;  
+    float :right;
+    text-align:center;
+    background-color:rgb(21, 160, 56);
+    border-color:chartreuse;
+    border-style: solid;
+    border-color:chartreuse;
+    
+}
+.rem{
+    text-align: left;
+    color: red;
+    float: left;
+    float: 20%;
+}
+.body-item{
+    color:red;
+    height: 40px;
+    width:100%;
+    text-align: center;
+    background-color: black;
+    padding-top: 2ex;
+    border-top-width: 0cm;
+    border-color:chartreuse;
+    border-width:3px;
+    font-size:inherit;
+    font-family: Cambria,Georgia, 'Times New Roman', Times, serif Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 40px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.user-name {
+width: 70%;
+color: rgb(38, 50, 56);
+font-weight: 600;
+font-size: 17px;
+letter-spacing: 1px;
+background: white;
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 15px;
+margin-left: 16px; 
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.password {
+        width: 70%;
+color: rgb(38, 50, 56);
+font-weight: 600;
+font-size: 17px;
+letter-spacing: 1px;
+background:white;
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-left: 16px;
+text-align: center;
+margin-bottom: 15px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+.login {
+  width: 400px;
+   margin: 16px auto; 
+  font-size: 16px;
+}
+
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff; 
+ border-color: #bbb;
+  color: #555; 
+}
+
+.login input[type="submit"] {
+  cursor: pointer;
+   border-radius: 5em; 
+  color:red;
+  width: 30%;
+  background: linear-gradient(to right, #0a0a0a, #0d0e0d);
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 65%;
+  font-size: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.has-error input[type="email"],
+.has-error input[type="password"] {
+    border-color: rgb(216, 12, 12);
+    color: rgb(230, 14, 14);
+}
+
+.forgot-password {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color:red;
+    padding-top: 15px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #fff; 
+    text-decoration: none
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+    
+}
+.facebook-style{
+    height: 20px;
+    width: 30%;  
+    float :right;
+    color:white;
+    text-align:center;
+    background-color: #3b5998;
+}
+.google-style{
+    height: 20px;
+    width: 30%;  
+    float :left;
+    color:white;
+    text-align:center;
+    background-color:#db3236;
+}
+.instrgram-style{
+    height: 20px;
+    width: 30%;  
+    float :left;
+    color:white;
+    text-align:center;
+    background-color:#405DE6 ;
+}
+
+.forgot_password {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color:Red;
+    padding-top: 15px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color:red;
+    text-decoration: none
+    
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+    
+}
+    
 .page-footer{
     width: 100%;
-    height:60px;
+    height:100px;
     background-color: rgb(9, 16, 109);
     border-color: chartreuse;
-    border-width: 1px;
+    border-width: 3px;
     border-style: solid;
 }
 .header-item{
@@ -32,14 +250,14 @@
 .footer-dev{
     color: darkorange;
     padding-top: 2px;
-    padding-left: 550px;
+    padding-left: 700px;
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .footer-tech-stack{
     color: darkorange;
-    padding-left:5px ;
-    padding-top: 5px;
+    padding-left:7px ;
+    padding-top: 4px;
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
